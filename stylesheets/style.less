@@ -5,6 +5,38 @@ body {
 	background: @secondary;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Paytone One';
+	color: @primary;
+	margin-top: 0;
+}
+
+h {
+	&1 {
+		font-size: 4.6rem;
+	}
+
+	&2 {
+		font-size: 4.2rem;
+	}
+
+	&3 {
+		font-size: 3.8rem;
+	}
+
+	&4 {
+		font-size: 3.4rem;
+	}
+
+	&5 {
+		font-size: 3rem;
+	}
+
+	&6 {
+		font-size: 2.6rem;
+	}
+}
+
 #app {
 	height: 100vh;
 	width: 100vw;
@@ -18,6 +50,7 @@ ham {
 	height: 100vh;
 	width: calc(100vw + @ham-w);
 	left: calc(100vw - @ham-w);
+	top: 0;
 
 	&.open {
 		left: -@ham-w !important;
@@ -29,7 +62,7 @@ ham {
 
 	.arrow-out {
 		position: absolute;
-		top: 20px;
+		top: 6vh;
 		left: -@ham-w;
 		background: none;
 		border: none;
@@ -87,6 +120,32 @@ ham {
 					}
 				}
 			}
+		}
+	}
+}
+
+.page-body {
+	.title-slide {
+		box-sizing: border-box;
+		height: 100vh;
+		width: 100vw;
+		padding: 72px;
+		display: grid;
+
+		&.top {
+			align-content: start;
+		}
+
+		&.bottom {
+			align-content: end;
+		}
+
+		&.left {
+			justify-content: start;
+		}
+
+		&.right {
+			justify-content: end;
 		}
 	}
 }
