@@ -42,6 +42,8 @@ h {
 	width: 100vw;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+	scrollbar-width: none;
 }
 
 ham {
@@ -128,7 +130,7 @@ ham {
 	.title-slide {
 		box-sizing: border-box;
 		height: 100vh;
-		width: 100vw;
+		width: 100%;
 		padding: 72px;
 		display: grid;
 
@@ -142,10 +144,12 @@ ham {
 
 		&.left {
 			justify-content: start;
+			text-align: left;
 		}
 
 		&.right {
 			justify-content: end;
+			text-align: right;
 		}
 	}
 }
