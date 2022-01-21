@@ -127,10 +127,14 @@ ham {
 }
 
 .page-body {
+	display: grid;
+	grid-template-columns: auto fit-content(975px) auto;
+
 	.title-slide {
+		grid-column: span 3;
 		box-sizing: border-box;
 		height: 100vh;
-		width: 100%;
+		width: 100vw;
 		padding: 72px;
 		display: grid;
 
@@ -150,6 +154,52 @@ ham {
 		&.right {
 			justify-content: end;
 			text-align: right;
+		}
+	}
+
+	.content {
+		grid-column: ~'2 / 3';
+		max-width: 975px;
+
+		&.a {
+			img, .image-placeholder {
+				background: lightgray;
+				width: 100vw;
+				max-width: 100%;
+				height: 480px;
+			}
+
+			.container {
+				
+			}
+		}
+
+		&.b {
+
+		}
+
+		&.c {
+
+		}
+
+		&.d {
+
+		}
+
+		&.e {
+
+		}
+
+		&.f {
+
+		}
+
+		&.dark-blue {
+
+		}
+
+		&.pink {
+
 		}
 	}
 }
