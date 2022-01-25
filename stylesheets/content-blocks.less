@@ -1,10 +1,12 @@
 .content {
-	grid-column: ~'2 / 3';
-	max-width: @container-max-width;
+	display: grid;
+	grid-template-columns: auto @container-max-width auto;
 	z-index: -5;
+	padding: 32px 0;
 
 	&.a, &.b {
 		img, .image-placeholder {
+			grid-column: ~'2/3';
 			background: lightgray;
 			width: 100vw;
 			height: calc(100vw*(2/3));
@@ -13,6 +15,7 @@
 		}
 
 		.container {
+			grid-column: ~'2/3';
 			padding: 32px;
 			text-align: justify;
 
