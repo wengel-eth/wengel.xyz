@@ -6,6 +6,11 @@ var app = new Vue({
 			isOpen : false
 		}
 	},
+	computed : {
+		cider : function() {
+			
+		}
+	},
 	methods : {
 		toggleMenu : function() {
 			this.$refs.ham.classList.toggle('open')
