@@ -1,3 +1,9 @@
+Vue.component('button-slashed', {
+	data : function() {
+		
+	}
+});
+
 var app = new Vue({
 	el : '#app',
 	data : {
