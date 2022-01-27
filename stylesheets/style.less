@@ -75,34 +75,29 @@ p, ul, li {
 }
 
 .link-button {
-	font-family: Paytone One;
-	font-size: 2.6rem;
-	color: @primary;
-	line-height: 1;
+	pointer-events: visibleFill;
 
-	background: transparent;
-	border: none;
+	a {
+		font-family: Paytone One;
+		font-size: calc(var(--h3) + 0.2rem);
 
-	svg {
 		polygon {
 			stroke: @primary;
 			stroke-width: 6px;
 			fill: transparent;
 		}
+
+		text {
+			fill: @primary;
+		}
 	}
 
-	&::after {
-		content: attr(data-item-text);
-		position: absolute;
-		transform: translate(-244px ,24px );
-	}
-
-	&:hover {
+	&:hover text {
 		cursor: pointer;
-		color: white;
+		fill: white;
 	}
 
-	&:hover svg polygon {
+	&:hover polygon {
 		fill: @primary;
 	}
 }
