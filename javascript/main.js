@@ -38,14 +38,23 @@ var app = new Vue({
 		}
 	},
 	mounted : function() {
-		let items = document.getElementsByClassName('cider');
+		var items = document.getElementsByClassName('cider');
 		for (let item = 0; item < items.length; item++) { // deploys random ciders above headers
-			let itemClassList = Array.from(items[item].parentNode.parentNode.classList);
-			let locol;
-			if (itemClassList.indexOf('dark-blue') != -1) {
-				locol = 'pink';
-			} else if (itemClassList.indexOf('pink') != -1) {
-				locol = 'dark-blue';
+			var locol;
+			try {
+				let itemClassList = Array.from(items[item].parentNode.parentNode.classList);
+				if (itemClassList.indexOf('dark-blue') != -1) {
+					locol = 'pink';
+				} else if (itemClassList.indexOf('pink') != -1) {
+					locol = 'dark-blue';
+				}
+			} catch (err) {
+				let itemClassList = Array.from(items[item].parentNode.parentNode.parentNode.classList);
+				if (itemClassList.indexOf('dark-blue') != -1) {
+					locol = 'pink';
+				} else if (itemClassList.indexOf('pink') != -1) {
+					locol = 'dark-blue';
+				}
 			}
 			items[item].style.backgroundImage = ('url("' + this.randCider(locol) + '")');
 		}

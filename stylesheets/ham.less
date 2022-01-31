@@ -5,6 +5,7 @@ ham {
 	width: calc(100vw + var(--ham-w));
 	left: calc(100vw - var(--ham-w));
 	top: 0;
+	z-index: 10;
 
 	&.open {
 		left: calc(var(--ham-w)*-1) !important;
@@ -16,7 +17,7 @@ ham {
 
 	.arrow-out {
 		position: absolute;
-		top: 6vh;
+		top: 20vh;
 		left: calc(var(--ham-w)*-1);
 		background: none;
 		border: none;
@@ -42,10 +43,10 @@ ham {
 
 		.back {
 			position: absolute;
-			padding: 16px;
+			padding: var(--ham-back-padding);
 			opacity: 0.5;
-			font-family: 'Paytone One';
-			font-size: 2rem;
+			font-family: Paytone One;
+			font-size: 3rem;
 			line-height: 1rem;
 			&:hover {
 				cursor: pointer;
@@ -57,11 +58,12 @@ ham {
 			list-style-type: none;
 			top: 0;
 			left: 0;
-			margin: 80px;
-			font-family: 'Paytone One';
-			font-size: 4.2rem;
+			margin: var(--ham-list-margin);
+			padding: 0;
+			font-family: Paytone One;
+			font-size: var(--h1);
 			li {
-				line-height: 4.6rem;
+				line-height: calc(var(--h1)*1.2);
 				a {
 					text-decoration: none;
 					color: black;
@@ -69,7 +71,8 @@ ham {
 					transition: 0.2s;
 					&:hover {
 						cursor: pointer;
-						font-size: 6rem;
+						font-size: calc(var(--h1)*1.6);
+						line-height: calc(var(--h1)*1.6);
 						opacity: 1;
 					}
 				}
