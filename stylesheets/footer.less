@@ -1,12 +1,27 @@
 footer {
 	display: grid;
 	align-items: center;
-	justify-content: center;
+	justify-items: center;
 	height: 180px;
 	width: 100vw;
+	color: @co1;
+	font-family: Share Tech Mono;
 
-	.container {
+	.v-container {
+		display: grid;
+		grid-template-rows: auto auto;
+		justify-items: center;
+
 		height: max-content;
-		width: max-content;
+		padding: 0 40px;
+
+		.h-container {
+			width: max-content;
+			display: flex;
+
+			.footer-tab {
+				margin: 0 16px;
+			}
+		}
 	}
 }

@@ -1,3 +1,5 @@
+const d = new Date()
+
 var app = new Vue({
 	el : '#app',
 	data : {
@@ -22,6 +24,11 @@ var app = new Vue({
 				'../assets/cider-e-dark-blue.svg',
 				'../assets/cider-f-dark-blue.svg'
 			]
+		}
+	},
+	computed : {
+		thisYear : function() {
+			return d.getFullYear();
 		}
 	},
 	methods : {
