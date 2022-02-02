@@ -29,6 +29,7 @@ const Home = Vue.component('home', {
 				<div class="image-placeholder"></div>
 			</section>
 			<content-b color="dark-blue"
+				image=""
 				heading="Snippet"
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 				link="/"
