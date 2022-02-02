@@ -11,7 +11,7 @@ const Footer = Vue.component('footer-component', {
 					</div>
 					<div class="footer-tab">
 						<h3>Contact.</h3>
-						<a href="/contact"><i class="fas fa-envelope"></i></a>
+						<router-link to="/contact"><i class="fas fa-envelope"></i></router-link>
 					</div>
 				</div>
 				<p>William Engel &#169; {{year}}</p>

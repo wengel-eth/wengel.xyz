@@ -49,12 +49,14 @@ const app = new Vue({
 			this.menu.isOpen = !this.menu.isOpen
 		},
 		closeMenu : function() {
-			if (this.$refs.ham.classList.toggle('open')) {
+			if (this.menu.isOpen) {
+				this.$refs.ham.classList.toggle('open')
 				this.menu.isOpen = !this.menu.isOpen
 			}
 		},
 		openMenu : function() {
-			if (!this.$refs.ham.classList.toggle('open')) {
+			if (!this.menu.isOpen) {
+				this.$refs.ham.classList.toggle('open')
 				this.menu.isOpen = !this.menu.isOpen
 			}
 		},

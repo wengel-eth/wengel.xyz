@@ -19,12 +19,7 @@ const Home = Vue.component('home', {
 						<span class="cider"></span>
 						<h2>This is another heading.</h2>
 						<p>Here is some minor filler text to make is seem like there’s actually important stuff here.</p>
-						<svg class="link-button" viewBox="0 0 250 70">
-							<router-link to="/">
-								<polygon points="6,6 6,64 244,64 244,34 204,6"/>
-								<text x="5" y="62" text-anchor="left">Button.</text>
-							</router-link>
-						</svg>
+						<slash-button link="/" text="Button."></slash-button>
 					</div>
 				</div>
 			</section>
