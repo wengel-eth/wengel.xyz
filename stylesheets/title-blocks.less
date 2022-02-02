@@ -1,9 +1,10 @@
 .title-slide {
 	box-sizing: border-box;
-	height: calc(100vw*(2/3));
+	height: calc(100vh*(1/2));
 	width: 100vw;
 	padding: var(--title-padding);
 	display: grid;
+	background: gray;
 
 	&.top {
 		align-content: start;
@@ -21,6 +22,10 @@
 	&.right {
 		justify-content: end;
 		text-align: right;
+	}
+
+	&.home {
+		height: calc(100vh*(2/3));
 	}
 
 	&.error-page {
