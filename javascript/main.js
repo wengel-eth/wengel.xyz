@@ -1,5 +1,15 @@
 const d = new Date();
 
+const routes = [
+	{path: '/', component: Home},
+	{path: '/contact', component: Contact},
+	{path: '/*', redirect: '/'}
+];
+
+const router = new VueRouter({
+	routes
+});
+
 const app = new Vue({
 	el : '#app',
 	data : {
@@ -66,7 +76,8 @@ const app = new Vue({
 			}
 			items[item].style.backgroundImage = ('url("' + this.randCider(locol) + '")');
 		}
-	}
+	},
+	router
 });
 
 w3.includeHTML();

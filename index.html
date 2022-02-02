@@ -19,10 +19,11 @@
 
 	<script src="pages/footer.vue.js" type="text/javascript"></script>
 	<script src="pages/home.vue.js" type="text/javascript"></script>
+	<script src="pages/contact.vue.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id="app">
-		<home></home>
+		<router-view></router-view>
 		<footer-component v-bind:year="thisYear"></footer-component>
 		<ham id="ham" ref="ham">
 			<div class="arrow-out">
