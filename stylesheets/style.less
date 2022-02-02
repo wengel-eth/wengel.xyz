@@ -4,6 +4,7 @@
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 	touch-action: pan-y;
+	-webkit-overflow-scrolling: touch;
 
 	&::-webkit-scrollbar {
 		display: none;
@@ -55,6 +56,9 @@ h6 {
 	width: 100vw;
 	margin: 0;
 	padding: 0;
+
+	overflow-y: scroll;
+	height: 100vh;
 }
 
 @import 'ham.less';
