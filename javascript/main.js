@@ -3,6 +3,7 @@ const d = new Date();
 const routes = [
 	{path: '/', component: Home},
 	{path: '/contact', component: Contact},
+	{path: '/projects', component: Projects},
 	{path: '/*', redirect: '/'}
 ];
 
@@ -47,6 +48,16 @@ const app = new Vue({
 			this.$refs.ham.classList.toggle('open')
 			this.menu.isOpen = !this.menu.isOpen
 		},
+		closeMenu : function() {
+			if (this.$refs.ham.classList.toggle('open')) {
+				this.menu.isOpen = !this.menu.isOpen
+			}
+		},
+		openMenu : function() {
+			if (!this.$refs.ham.classList.toggle('open')) {
+				this.menu.isOpen = !this.menu.isOpen
+			}
+		},
 		toggleMenuHover : function() {
 			this.$refs.ham.classList.toggle('hovering')
 			this.menu.isHovering = !this.menu.isHovering
@@ -80,4 +91,6 @@ const app = new Vue({
 	router
 });
 
-w3.includeHTML();
+router.afterEach((to, from) => {
+	app.closeMenu()
+});
