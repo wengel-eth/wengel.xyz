@@ -3,7 +3,8 @@ const d = new Date();
 const routes = [
 	{path: '/', component: Home},
 	{path: '/contact', component: Contact},
-	{path: '/*', redirect: '/'}
+	{path: '/404', component: ErrorPage},
+	{path: '/*', redirect: '/404'}
 ];
 
 const router = new VueRouter({
