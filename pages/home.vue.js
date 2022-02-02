@@ -4,30 +4,21 @@ const Home = Vue.component('home', {
 			<section class="title-slide home top left">
 				<h1>William Engel.</h1>
 			</section>
-			<section class="content a dark-blue">
-				<div class="container">
-					<span class="cider"></span>
-					<h2>I design brands.</h2>
-					<p>Here is some minor filler text to make is seem like there’s actually important stuff here.</p>
-				</div>
-				<div class="image-placeholder"></div>
-			</section>
-			<section class="content a dark-blue">
-				<div class="container">
-					<span class="cider"></span>
-					<h2>I design take photos.</h2>
-					<p>Here is some minor filler text to make is seem like there’s actually important stuff here.</p>
-				</div>
-				<div class="image-placeholder"></div>
-			</section>
-			<section class="content a dark-blue">
-				<div class="container">
-					<span class="cider"></span>
-					<h2>I design make games.</h2>
-					<p>Here is some minor filler text to make is seem like there’s actually important stuff here.</p>
-				</div>
-				<div class="image-placeholder"></div>
-			</section>
+			<content-a color="dark-blue"
+				image="https://wengel-xyz-images.nyc3.digitaloceanspaces.com/IMG_7325.jpg"
+				heading="I design brands."
+				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
+			></content-a>
+			<content-a color="dark-blue"
+				image=""
+				heading="I capture photos."
+				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
+			></content-a>
+			<content-a color="dark-blue"
+				image=""
+				heading="I make games."
+				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
+			></content-a>
 			<content-b color="dark-blue"
 				image=""
 				heading="Snippet"

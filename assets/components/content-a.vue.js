@@ -7,7 +7,8 @@ const ContentA = Vue.component('content-a', {
 				<h2>{{heading}}</h2>
 				<p>{{p}}</p>
 			</div>
-			<div class="image-placeholder"></div>
+			<div v-if="!image" class="image-placeholder"></div>
+			<img v-if="image" v-bind:src="image"/>
 		</section>
 	`
 })

@@ -3,7 +3,8 @@ const ContentB = Vue.component('content-b', {
 	template: `
 		<section class="content b" v-bind:class="color">
 			<div class="b" v-bind:class="color">
-				<div class="image-placeholder overlay"></div>
+				<div v-if="!image" class="image-placeholder overlay"></div>
+				<img v-if="image" v-bind:src="image"/>
 				<div class="container">
 					<span class="cider"></span>
 					<h2>{{heading}}</h2>
