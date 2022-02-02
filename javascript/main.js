@@ -1,8 +1,9 @@
-const d = new Date()
+const d = new Date();
 
-var app = new Vue({
+const app = new Vue({
 	el : '#app',
 	data : {
+		currentRoute : window.location.pathname,
 		menu : {
 			isHovering : false,
 			isOpen : false
@@ -67,3 +68,5 @@ var app = new Vue({
 		}
 	}
 });
+
+w3.includeHTML();
