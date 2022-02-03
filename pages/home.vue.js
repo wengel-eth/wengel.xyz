@@ -20,13 +20,6 @@ const Home = Vue.component('home', {
 				heading="I make games."
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 			></content-a>
-			<content-b color="dark-blue"
-				image=""
-				heading="Snippet"
-				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
-				link="/"
-				text="Button."
-			></content-b>
 		</container>
 	`
 });

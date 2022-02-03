@@ -3,6 +3,7 @@ const d = new Date();
 const routes = [
 	{path: '/', component: Home},
 	{path: '/contact', component: Contact},
+	{path: '/projects', component: Projects},
 	{path: '/404', component: ErrorPage},
 	{path: '/*', redirect: '/404'}
 ];
