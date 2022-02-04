@@ -7,28 +7,40 @@ const Projects = Vue.component('projects', {
 			<content-b color="dark-blue"
 				image=""
 				heading="Portfolio."
-				p="The website you are viewing right now. I made it. All of it."
+				p="The website you are viewing right now. Handcrafted with Hypertext \
+					Markup Language, styled with Cascading Stylesheets, and structured \
+					with the best in class Vue Javascript framework technology with \
+					a touch of Vanilla JS on top."
 				link="/"
 				text="View."
 			></content-b>
 			<content-b color="dark-blue"
 				image=""
 				heading="Portfolio."
-				p="The website you are viewing right now. I made it. All of it."
+				p="The website you are viewing right now. Handcrafted with Hypertext \
+					Markup Language, styled with Cascading Stylesheets, and structured \
+					with the best in class Vue Javascript framework technology with \
+					a touch of Vanilla JS on top."
 				link="/"
 				text="View."
 			></content-b>
 			<content-b color="dark-blue"
 				image=""
 				heading="Portfolio."
-				p="The website you are viewing right now. I made it. All of it."
+				p="The website you are viewing right now. Handcrafted with Hypertext \
+					Markup Language, styled with Cascading Stylesheets, and structured \
+					with the best in class Vue Javascript framework technology with \
+					a touch of Vanilla JS on top."
 				link="/"
 				text="View."
 			></content-b>
 			<content-b color="dark-blue"
 				image=""
 				heading="Portfolio."
-				p="The website you are viewing right now. I made it. All of it."
+				p="The website you are viewing right now. Handcrafted with Hypertext \
+					Markup Language, styled with Cascading Stylesheets, and structured \
+					with the best in class Vue Javascript framework technology with \
+					a touch of Vanilla JS on top."
 				link="/"
 				text="View."
 			></content-b>
