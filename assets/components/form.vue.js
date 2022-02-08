@@ -1,9 +1,10 @@
 const Form = Vue.component('slash-form', {
-	props: ['color'],
+	props: ['color', 'form-name'],
 	template: `
 		<section class="content form" v-bind:class="color">
 			<div class="container">
-				<form name="contact" method="POST" data-netlify="true">
+				<form v-bind:name="form-name" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+					<input type="hidden" v-bind:name="form-name" v-bind:value="form-name" />
 					<div class="names">
 						<input name="name" type="text" placeholder="Name"/>
 						<input name="email" type="email" placeholder="Email"/>

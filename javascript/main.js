@@ -99,8 +99,6 @@ const app = new Vue({
 	},
 	updated : function() {
 		this.ciderGen();
-
-		document.querySelector("form").addEventListener("submit", handleSubmit);
 	},
 	router
 });
@@ -108,18 +106,3 @@ const app = new Vue({
 router.afterEach((to, from) => {
 	app.closeMenu();
 });
-
-const handleSubmit = (e) => {
-	e.preventDefault();
-	let myForm = document.getElementById("pizzaOrder");
-	let formData = new FormData(myForm);
-	fetch("/", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/x-www-form-urlencoded"
-			},
-			body: new URLSearchParams(formData).toString(),
-		})
-		.then(() => console.log("Form successfully submitted"))
-		.catch((error) => alert(error));
-};
