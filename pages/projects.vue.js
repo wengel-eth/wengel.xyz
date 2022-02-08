@@ -6,7 +6,7 @@ const Projects = Vue.component('projects', {
 			</section>
 			<content-b color="dark-blue"
 				image="background-image:url('https://wengel-xyz-images.nyc3.digitaloceanspaces.com/RED.jpg');"
-				heading="Portfolio."
+				heading="Website."
 				p="The website you are viewing right now. Handcrafted with Hypertext \
 					Markup Language, styled with Cascading Stylesheets, and structured \
 					with the best in class Vue Javascript framework technology with \

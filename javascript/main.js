@@ -70,33 +70,39 @@ const app = new Vue({
 		},
 		randCider : function(color) {
 			return this.ciders[color][Math.floor(Math.random()*this.ciders[color].length)];
+		},
+		ciderGen : function() {
+			var items = document.getElementsByClassName('cider');
+			for (let item = 0; item < items.length; item++) { // deploys random ciders above headers
+				var locol;
+				try {
+					let itemClassList = Array.from(items[item].parentNode.parentNode.classList);
+					if (itemClassList.indexOf('dark-blue') != -1) {
+						locol = 'pink';
+					} else if (itemClassList.indexOf('pink') != -1) {
+						locol = 'dark-blue';
+					}
+				} catch (err) {
+					let itemClassList = Array.from(items[item].parentNode.parentNode.parentNode.classList);
+					if (itemClassList.indexOf('dark-blue') != -1) {
+						locol = 'pink';
+					} else if (itemClassList.indexOf('pink') != -1) {
+						locol = 'dark-blue';
+					}
+				}
+				items[item].style.backgroundImage = ('url("' + this.randCider(locol) + '")');
+			}
 		}
 	},
 	mounted : function() {
-		var items = document.getElementsByClassName('cider');
-		for (let item = 0; item < items.length; item++) { // deploys random ciders above headers
-			var locol;
-			try {
-				let itemClassList = Array.from(items[item].parentNode.parentNode.classList);
-				if (itemClassList.indexOf('dark-blue') != -1) {
-					locol = 'pink';
-				} else if (itemClassList.indexOf('pink') != -1) {
-					locol = 'dark-blue';
-				}
-			} catch (err) {
-				let itemClassList = Array.from(items[item].parentNode.parentNode.parentNode.classList);
-				if (itemClassList.indexOf('dark-blue') != -1) {
-					locol = 'pink';
-				} else if (itemClassList.indexOf('pink') != -1) {
-					locol = 'dark-blue';
-				}
-			}
-			items[item].style.backgroundImage = ('url("' + this.randCider(locol) + '")');
-		}
+		this.ciderGen();
+	},
+	updated : function() {
+		this.ciderGen();
 	},
 	router
 });
 
 router.afterEach((to, from) => {
-	app.closeMenu()
+	app.closeMenu();
 });
