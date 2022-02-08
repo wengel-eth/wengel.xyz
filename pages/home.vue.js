@@ -11,12 +11,12 @@ const Home = Vue.component('home', {
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 			></content-a>
 			<content-a color="dark-blue"
-				image=""
+				image="https://wengel-xyz-images.nyc3.digitaloceanspaces.com/IMG_9820.jpg"
 				heading="I capture photos."
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 			></content-a>
 			<content-a color="dark-blue"
-				image=""
+				image="https://wengel-xyz-images.nyc3.digitaloceanspaces.com/IMG_0250.jpg"
 				heading="I make games."
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 			></content-a>
