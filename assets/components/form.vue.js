@@ -3,13 +3,13 @@ const Form = Vue.component('slash-form', {
 	template: `
 		<section class="content form" v-bind:class="color">
 			<div class="container">
-				<form name="contact" netlify>
+				<form name="contact" method="POST" data-netlify="true">
 					<div class="names">
-						<input name="Name" type="text" placeholder="Name">
-						<input name="Email" type="email" placeholder="Email">
+						<input name="name" type="text" placeholder="Name">
+						<input name="email" type="email" placeholder="Email">
 					</div>
 					<div class="comment">
-						<textarea name="Comment" rows="6" placeholder="Comment"></textarea>
+						<textarea name="comment" rows="6" placeholder="Comment"></textarea>
 					</div>
 					<button class="link-button" type="submit">
 						<svg viewBox="0 0 250 70">
