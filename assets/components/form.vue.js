@@ -5,11 +5,11 @@ const Form = Vue.component('slash-form', {
 			<div class="container">
 				<form name="contact" method="POST" data-netlify="true">
 					<div class="names">
-						<input name="name" type="text" placeholder="Name">
-						<input name="email" type="email" placeholder="Email">
+						<input name="name" type="text" placeholder="Name"/>
+						<input name="email" type="email" placeholder="Email"/>
 					</div>
 					<div class="comment">
-						<textarea name="comment" rows="6" placeholder="Comment"></textarea>
+						<textarea name="message" rows="6" placeholder="Comment"></textarea>
 					</div>
 					<button class="link-button" type="submit">
 						<svg viewBox="0 0 250 70">
