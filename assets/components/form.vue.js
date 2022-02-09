@@ -3,7 +3,7 @@ const Form = Vue.component('slash-form', {
 	template: `
 		<section class="content form" v-bind:class="color">
 			<div class="container">
-				<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+				<form name="contact" method="POST" netlify netlify-honeypot="bot-field">
 					<input type="hidden" name="contact" value="contact" />
 					<div class="names">
 						<input name="name" type="text" placeholder="Name"/>
