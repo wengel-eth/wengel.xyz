@@ -37,9 +37,6 @@ const app = new Vue({
 				'../assets/cider-e-dark-blue.svg',
 				'../assets/cider-f-dark-blue.svg'
 			]
-		},
-		images : {
-			'fire' : 'https://wengel-xyz-images.nyc3.digitaloceanspaces.com/IMG_7325.jpg'
 		}
 	},
 	computed : {
