@@ -6,7 +6,7 @@ const Home = Vue.component('home', {
 				<h1>William Engel.</h1>
 			</section>
 			<content-a color="dark-blue"
-				image=""
+				image="https://wengel-xyz-images.nyc3.digitaloceanspaces.com/engelheim_website.jpg"
 				heading="I design brands."
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 			></content-a>
