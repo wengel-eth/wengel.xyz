@@ -6,11 +6,11 @@ const Form = Vue.component('slash-form', {
 				<form name="contact" method="POST" netlify netlify-honeypot="bot-field">
 					<input type="hidden" name="form-name" value="contact" />
 					<div class="names">
-						<input name="name" type="text" placeholder="Name"/>
-						<input name="email" type="email" placeholder="Email"/>
+						<input name="name" type="text" placeholder="Name" required/>
+						<input name="email" type="email" placeholder="Email" required/>
 					</div>
 					<div class="comment">
-						<textarea name="message" rows="6" placeholder="Comment"></textarea>
+						<textarea name="message" rows="6" placeholder="Comment" required></textarea>
 					</div>
 					<button class="link-button" type="submit">
 						<svg viewBox="0 0 250 70">
