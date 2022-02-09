@@ -105,4 +105,8 @@ const app = new Vue({
 
 router.afterEach((to, from) => {
 	app.closeMenu();
+	document.getElementById('app').scrollTo({
+		top: 0,
+		left: 0
+	});
 });

@@ -123,11 +123,23 @@
 	&.dark-blue {
 		color: @co1;
 		background: @secondary;
+
+		& *:focus {
+			outline: @co2;
+			outline-offset: 4px;
+			outline-style: dashed;
+		}
 	}
 
 	&.pink {
 		color: @co1;
 		background: @co2;
+
+		& *:focus {
+			outline: @secondary;
+			outline-offset: 4px;
+			outline-style: dashed;
+		}
 	}
 
 
