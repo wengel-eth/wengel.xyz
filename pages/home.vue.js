@@ -7,17 +7,20 @@ const Home = Vue.component('home', {
 			</section>
 			<content-a color="dark-blue"
 				image="https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg"
-				heading="I design brands."
+				link="/"
+				heading="I create brands."
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 			></content-a>
 			<content-a color="dark-blue"
 				image="https://ik.imagekit.io/wengel/wengel_xyz/IMG_9820_1QFj9qXS2-x.jpg"
+				link="/"
 				heading="I capture photos."
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 			></content-a>
 			<content-a color="dark-blue"
 				image="https://ik.imagekit.io/wengel/wengel_xyz/IMG_0250_ATRfb6sMQcXB.jpg"
-				heading="I make games."
+				link="/"
+				heading="I construct games."
 				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
 			></content-a>
 		</container>

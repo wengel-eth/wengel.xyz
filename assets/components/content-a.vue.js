@@ -1,5 +1,5 @@
 const ContentA = Vue.component('content-a', {
-	props: ['color', 'image', 'heading', 'p'],
+	props: ['color', 'image', 'link', 'heading', 'p'],
 	template: `
 		<section class="content a" v-bind:class="color">
 			<div class="container">
@@ -8,7 +8,9 @@ const ContentA = Vue.component('content-a', {
 				<p>{{p}}</p>
 			</div>
 			<div v-if="!image" class="image-placeholder"></div>
-			<img v-if="image" v-bind:src="image"/>
+			<router-link v-bind:to="link">
+				<img v-if="image" v-bind:src="image"/>
+			</router-link>
 		</section>
 	`
 })
