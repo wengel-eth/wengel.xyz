@@ -8,9 +8,12 @@ const ContentA = Vue.component('content-a', {
 				<p>{{p}}</p>
 			</div>
 			<div v-if="!image" class="image-placeholder"></div>
-			<router-link v-bind:to="link">
+			<router-link v-if="link.split('://')[0] != 'https'" v-bind:to="link">
 				<img v-if="image" v-bind:src="image"/>
 			</router-link>
+			<a v-if="link.split('://')[0] == 'https'" v-bind:href="link">
+				<img v-if="image" v-bind:src="image"/>
+			</a>
 		</section>
 	`
 })
