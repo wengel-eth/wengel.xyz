@@ -5,7 +5,7 @@ const Projects = Vue.component('projects', {
 				<h1>Projects.</h1>
 			</section>
 			<content-b color="dark-blue"
-				image="background-image:url('https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=w-1080%2Ch-1080%2Cfo-auto');"
+				image="background-image:url('https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=w-720,h-720,fo-auto');"
 				heading="This Website."
 				p="The website you are viewing right now. Handcrafted with Hypertext \
 					Markup Language, styled with Cascading Stylesheets, and structured \
@@ -15,7 +15,7 @@ const Projects = Vue.component('projects', {
 				text="View."
 			></content-b>
 			<content-b color="dark-blue"
-				image="background-image:url('https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=proj_thmb');"
+				image="background-image:url('https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=w-720,h-720,fo-auto');"
 				heading="molllo.com"
 				p="Another handcrafted masterpiece. This elegant blog is curated with \
 					excellent articles aimed at providing exceptional assets from across \
