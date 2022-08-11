@@ -15,7 +15,7 @@ const Projects = Vue.component('projects', {
 				text="View."
 			></content-b>
 			<content-b color="dark-blue"
-				image="background-image:url('https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=w-1080%2Ch-1080%2Cfo-auto');"
+				image="background-image:url('https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=proj_thmb');"
 				heading="molllo.com"
 				p="Another handcrafted masterpiece. This elegant blog is curated with \
 					excellent articles aimed at providing exceptional assets from across \
