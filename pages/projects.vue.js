@@ -1,7 +1,7 @@
 const Projects = Vue.component('projects', {
 	template: `
 		<container class="page-body">
-			<section class="title-slide bottom left" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)),url('https://ik.imagekit.io/wengel/wengel_xyz/IMG_9655_z_yUF3J6VC3.jpg')">
+			<section class="title-slide bottom left" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5)),url('https://ik.imagekit.io/wengel/wengel_xyz/IMG_9655_z_yUF3J6VC3.jpg?tr=w-1440')">
 				<h1>Projects.</h1>
 			</section>
 			<content-b color="dark-blue"
