@@ -14,6 +14,13 @@ const Projects = Vue.component('projects', {
 				link="/"
 				text="View."
 			></content-b>
+			<content-b color="dark-blue"
+				image="background-image:url('https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=w-1080%2Ch-1080%2Cfo-auto');"
+				heading="molllo.com"
+				p="Another handcrafted masterpiece."
+				link="https://molllo.com"
+				text="View."
+			></content-b>
 		</container>
 	`
 })
