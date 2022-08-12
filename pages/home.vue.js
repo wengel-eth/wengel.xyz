@@ -8,8 +8,8 @@ const Home = Vue.component('home', {
 			<content-a color="dark-blue"
 				image="https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=w-1080,pr-true"
 				link="/"
-				heading="I create brands."
-				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
+				heading="I tweet truth."
+				p="The world needs more people willing to tell the truth, not less. Whether the entire world is against it or not, my tweets mainly compromise with Biblical takes on contemporary issues. “All flesh is like grass, and all its glory like the flower of grass. The grass withers, and the flower falls off, but the word of the Lord endures forever.” (1 Peter 1:24-25a)"
 			></content-a>
 			<content-a color="dark-blue"
 				image="https://ik.imagekit.io/wengel/wengel_xyz/IMG_9820_1QFj9qXS2-x.jpg?tr=w-1080,pr-true"
