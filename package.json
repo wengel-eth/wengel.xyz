@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "netlify-cli": "^10.17.4"
+  }
+}
