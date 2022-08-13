@@ -13,9 +13,9 @@ const Home = Vue.component('home', {
 			></content-a>
 			<content-a color="dark-blue"
 				image="https://ik.imagekit.io/wengel/wengel_xyz/IMG_9820_1QFj9qXS2-x.jpg?tr=w-1440,pr-true"
-				link="/"
-				heading="Capturer of Photos."
-				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
+				link="/projects"
+				heading="Designer of Graphics."
+				p="Graphic and Website design are one of my passions. I love spending countless hours figuring out the intricacies of design and pushing it to the limits. Here are some of my finish/ongoing design projects that you can check out right now."
 			></content-a>
 			<content-a color="dark-blue"
 				image="https://ik.imagekit.io/wengel/wengel_xyz/IMG_0250_ATRfb6sMQcXB.jpg?tr=w-1440,pr-true"
