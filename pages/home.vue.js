@@ -21,7 +21,7 @@ const Home = Vue.component('home', {
 				image="https://ik.imagekit.io/wengel/wengel_xyz/IMG_0250_ATRfb6sMQcXB.jpg?tr=w-1440,pr-true"
 				link="/"
 				heading="Constructor of Games."
-				p="Here is some minor filler text to make is seem like there’s actually important stuff here."
+				p="I love to design video/board games and hope to one day. I have designed many board games in my free time but never really published one. If I ever get around to it, the page will be through this link."
 			></content-a>
 		</container>
 	`
