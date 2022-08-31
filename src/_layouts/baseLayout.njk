@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>William Engel</title>
+
+	<style>{% include 'master.css' %}</style>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+	<script defer src="https://kit.fontawesome.com/8c55de64c7.js" crossorigin="anonymous"></script>
+
+	<script src="assets/components/button.vue.js" type="text/javascript"></script>
+	<script src="assets/components/content-a.vue.js" type="text/javascript"></script>
+	<script src="assets/components/content-b.vue.js" type="text/javascript"></script>
+	<script src="assets/components/form.vue.js" type="text/javascript"></script>
+</head>
+<body>
+	<div style="display:none;">
+		<img src="https://ik.imagekit.io/wengel/wengel_xyz/pigeon_9wuuIH3Euv.jpg?tr=w-1440,pr-true">
+		<img src="https://ik.imagekit.io/wengel/wengel_xyz/IMG_7325_lm1xxNeU8c6t.jpg?tr=w-1440,pr-true">
+		<img src="https://ik.imagekit.io/wengel/wengel_xyz/twitter-mockup_I3xIzXzBM.jpg?tr=w-1440,pr-true">
+		<img src="https://ik.imagekit.io/wengel/wengel_xyz/IMG_9820_1QFj9qXS2-x.jpg?tr=w-1440,pr-true">
+		<img src="https://ik.imagekit.io/wengel/wengel_xyz/IMG_0250_ATRfb6sMQcXB.jpg?tr=w-1440,pr-true">
+		<img src="https://ik.imagekit.io/wengel/wengel_xyz/IMG_9655_z_yUF3J6VC3.jpg?tr=w-1440,pr-true">
+		<img src="https://ik.imagekit.io/wengel/wengel_xyz/engelheim_website_TYgHCU5MitL.jpg?tr=w-1080,h-1080,fo-center,pr-true">
+		<img src="https://ik.imagekit.io/wengel/wengel_xyz/Perspective-Web-Mockup-17-Main_File_3Fb72KHy1.png?tr=w-1080,h-1080,fo-center,pr-true">
+		<a href="https://molllo.com"></a>
+	</div>
+	<div id="app">
+		<div class="mainContainer">
+			{{ content | safe }}
+		</div>
+		<footer-component v-bind:year="thisYear"></footer-component>
+		<ham id="ham" ref="ham">
+			<div class="arrow-out">
+				<svg viewBox="0 0 16 16">
+					<polygon points="16,0 16,16 8,8"
+						ref="polyMenuHover"
+						@click="toggleMenu()"
+						@mouseenter="toggleMenuHover()"
+						@mouseleave="toggleMenuHover()"/>
+				</svg>
+			</div>
+			<div class="menu">
+				<span class="back" @click="toggleMenu()">×</span>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a href="https://linktr.ee/wengel.eth">Linktree</a></li>
+				</ul>
+			</div>
+		</ham>
+		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
+			<input name="name" type="text"/>
+			<input name="email" type="email"/>
+			<textarea name="message"></textarea>
+		</form>
+	</div>
+
+	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<script>{% include 'main.js' %}</script>
+</body>
+
+</html>
