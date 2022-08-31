@@ -35,7 +35,7 @@
 		<a href="https://molllo.com"></a>
 	</div>
 	<div id="app">
-		<div class="mainContainer">
+		<div class="page-body">
 			{{ content | safe }}
 		</div>
 		{{ c.footer() }}
@@ -59,11 +59,6 @@
 				</ul>
 			</div>
 		</ham>
-		<form name="contact" netlify netlify-honeypot="bot-field" hidden>
-			<input name="name" type="text"/>
-			<input name="email" type="email"/>
-			<textarea name="message"></textarea>
-		</form>
 	</div>
 
 	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
