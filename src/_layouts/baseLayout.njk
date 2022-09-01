@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>William Engel — {{ title }}</title>
+
+	<style>{% include 'master.css' %}</style>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+	<script defer src="https://kit.fontawesome.com/8c55de64c7.js" crossorigin="anonymous"></script>
+
+	{% import 'comps.njk' as c %}
+</head>
+<body>
+	<div id="app">
+		<div class="page-body">
+			{{ content | safe }}
+		</div>
+		{{ c.footer() }}
+		<ham id="ham" ref="ham">
+			<div class="arrow-out">
+				<svg viewBox="0 0 16 16">
+					<polygon points="16,0 16,16 8,8"
+						ref="polyMenuHover"
+						@click="toggleMenu()"
+						@mouseenter="toggleMenuHover()"
+						@mouseleave="toggleMenuHover()"/>
+				</svg>
+			</div>
+			<div class="menu">
+				<span class="back" @click="toggleMenu()">×</span>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a href="https://linktr.ee/wengel.eth">Linktree</a></li>
+				</ul>
+			</div>
+		</ham>
+	</div>
+
+	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<script>{% include 'main.js' %}</script>
+</body>
+
+</html>

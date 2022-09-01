@@ -1,21 +1,8 @@
 const d = new Date();
 
-const routes = [
-	{path: '/', component: Home},
-	{path: '/contact', component: Contact},
-	{path: '/projects', component: Projects},
-	{path: '/404', component: ErrorPage},
-	{path: '/*', redirect: '/404'}
-];
-
-const router = new VueRouter({
-	routes
-});
-
 const app = new Vue({
 	el : '#app',
 	data : {
-		currentRoute : window.location.pathname,
 		menu : {
 			isHovering : false,
 			isOpen : false
@@ -96,14 +83,5 @@ const app = new Vue({
 	},
 	updated : function() {
 		this.ciderGen();
-	},
-	router
-});
-
-router.afterEach((to, from) => {
-	app.closeMenu();
-	document.getElementById('app').scrollTo({
-		top: 0,
-		left: 0
-	});
+	}
 });
