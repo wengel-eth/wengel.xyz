@@ -53,15 +53,34 @@
 	<section class="content a {{ color }}">
 		<div class="container">
 			<span class="cider"></span>
-			<h2>{{heading}}</h2>
-			<p>{{p}}</p>
+			<h2>{{ heading }}</h2>
+			<p>{{ p }}</p>
 		</div>
-		<div v-if="!image" class="image-placeholder"></div>
-		<router-link v-if="link.split('://')[0] != 'https'" v-bind:to="link">
-			<img v-if="image" v-bind:src="image"/>
-		</router-link>
-		<a v-if="link.split('://')[0] == 'https'" v-bind:href="link">
-			<img v-if="image" v-bind:src="image"/>
-		</a>
+		{% if image == '' %}
+			<div class="image-placeholder"></div>
+		{% else %}
+			<a href="{{ link }}">
+				<img src="{{ image }}"/>
+			</a>
+		{% endif %}
+	</section>
+{% endmacro %}
+
+{% macro contentB(color, image, heading, p, text, link) %}
+	<section class="content b {{ color }}">
+		<div class="b {{ color }}">
+			<div class="image-placeholder overlay" style="{{ image }}"></div>
+			<div class="container">
+				<span class="cider"></span>
+				<h2>{{ heading }}</h2>
+				<p>{{ p }}</p>
+				<svg class="link-button" viewBox="0 0 250 70">
+					<a href="{{ link }}">
+						<polygon points="6,6 6,64 244,64 244,34 204,6"/>
+						<text x="9" y="61" text-anchor="left">{{ text }}</text>
+					</a>
+				</svg>
+			</div>
+		</div>
 	</section>
 {% endmacro %}
