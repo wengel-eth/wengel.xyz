@@ -6,3 +6,8 @@
 	to = "https://wengel.xyz/:splat"
 	status = 200
 	force = true
+
+[[ redirect ]]
+	from = "/*"
+	to = "/404"
+	status = 404
