@@ -84,3 +84,12 @@
 		</div>
 	</section>
 {% endmacro %}
+
+{% macro product(name, image, price, link) %}
+	<a class="product" href="{{ link }}">
+		<img src="{{ image }}">
+		<span class="name">{{ name }}</span>
+		<br>
+		<span class="price">${{ price }}</span>
+	</a>
+{% endmacro %}

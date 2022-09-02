@@ -1,0 +1,16 @@
+---
+layout: baseLayout.njk
+title: 'Home'
+---
+{% import 'comps.njk' as c %}
+
+<section class="title-slide bottom left"
+	style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)),url('https://ik.imagekit.io/wengel/wengel_xyz/IMG_7325_lm1xxNeU8c6t.jpg?tr=w-1440,pr-true');">
+	<h1>My Store.</h1>
+</section>
+
+<section class="content c dark-blue">
+	<div class="container">
+		{{ c.product('Pro Life Sticker', '', 2.99, '/store/pro-life-sticker') }}
+	</div>
+</section>

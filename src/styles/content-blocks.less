@@ -68,6 +68,60 @@
 
 	}
 
+	&.c {
+		display: block;
+
+		.container {
+			width: 100%;
+			max-width: 968px;
+			margin: 0 auto;
+			padding: 64px 12px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, 230px);
+			grid-gap: 16px;
+
+			@media screen and (max-width: 992px) {
+				max-width: 722px;
+			}
+
+			@media screen and (max-width: 746px) {
+				max-width: 476px;
+			}
+
+			@media screen and (max-width: 500px) {
+				max-width: 230px;
+			}
+
+			.product {
+				width: 230px;
+				height: 330px;
+				box-sizing: border-box;
+				border: 8px solid @primary;
+				background: @primary;
+				text-decoration: none;
+
+				img {
+					width: 214px;
+					height: 214px;
+					background: gray;
+				}
+
+				.name {
+					margin: 8px 0;
+					font-size: var(--h5);
+					font-family: Share Tech Mono;
+					color: @secondary;
+				}
+
+				.price {
+					font-size: var(--h4);
+					font-family: Paytone One;
+					color: @secondary;
+				}
+			}
+		}
+	}
+
 	&.form {
 		.container {
 			grid-column: ~'2/3';
