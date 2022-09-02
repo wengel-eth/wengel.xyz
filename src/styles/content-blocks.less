@@ -33,14 +33,21 @@
 		.b {
 			display: grid;
 			grid-column: ~'2/3';
-			grid-template-columns: auto auto;
+			@media screen and (min-width: 640px) {
+				grid-template-columns: auto auto;
+			}
+			margin-bottom: 32px;
 
 			img, .image-placeholder {
 				background: gray;
-				width: calc(@container-max-width/3);
-				height: calc(@container-max-width/3);
-				max-width: calc(100vw/3);
-				max-height: calc(100vw/3);
+				width: 100vw;
+				height: 100vw;
+				@media screen and (min-width: 640px) {
+					width: calc(@container-max-width/3);
+					height: calc(@container-max-width/3);
+					max-width: calc(100vw/3);
+					max-height: calc(100vw/3);
+				}
 				overflow: hidden;
 				background-size: contain;
 				background-position: center;
