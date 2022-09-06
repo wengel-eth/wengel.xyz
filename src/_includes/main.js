@@ -9,20 +9,20 @@ const app = new Vue({
 		},
 		ciders : {
 			'pink' : [
-				'../assets/cider-a-pink.svg',
-				'../assets/cider-b-pink.svg',
-				'../assets/cider-c-pink.svg',
-				'../assets/cider-d-pink.svg',
-				'../assets/cider-e-pink.svg',
-				'../assets/cider-f-pink.svg'
+				'/assets/cider-a-pink.svg',
+				'/assets/cider-b-pink.svg',
+				'/assets/cider-c-pink.svg',
+				'/assets/cider-d-pink.svg',
+				'/assets/cider-e-pink.svg',
+				'/assets/cider-f-pink.svg'
 			],
 			'dark-blue' : [
-				'../assets/cider-a-dark-blue.svg',
-				'../assets/cider-b-dark-blue.svg',
-				'../assets/cider-c-dark-blue.svg',
-				'../assets/cider-d-dark-blue.svg',
-				'../assets/cider-e-dark-blue.svg',
-				'../assets/cider-f-dark-blue.svg'
+				'/assets/cider-a-dark-blue.svg',
+				'/assets/cider-b-dark-blue.svg',
+				'/assets/cider-c-dark-blue.svg',
+				'/assets/cider-d-dark-blue.svg',
+				'/assets/cider-e-dark-blue.svg',
+				'/assets/cider-f-dark-blue.svg'
 			]
 		}
 	},

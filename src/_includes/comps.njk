@@ -9,7 +9,7 @@
 				</div>
 				<div class="footer-tab">
 					<h3>Contact.</h3>
-					<router-link to="/contact"><i class="fas fa-envelope"></i></router-link>
+					<a href="/contact"><i class="fas fa-envelope"></i></a>
 				</div>
 			</div>
 			<p>William Engel &#169; {% raw %}{{ thisYear }}{% endraw %}</p>
@@ -85,9 +85,9 @@
 	</section>
 {% endmacro %}
 
-{% macro product(name, image, price, link) %}
+{% macro product(name, image, alt, price, link) %}
 	<a class="product" href="{{ link }}">
-		<img src="{{ image }}">
+		<img src="{{ image }}" alt="{{ alt }}">
 		<span class="name">{{ name }}</span>
 		<br>
 		<span class="price">${{ price }}</span>
