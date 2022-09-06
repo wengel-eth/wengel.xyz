@@ -1,5 +1,5 @@
 window.SnipcartSettings = {
-	publicApiKey: 'MTgyZmRiNWEtNThiMy00Zjk5LWJhYTMtMzFhNmE3OTdkMGY0NjM3MjYyODczODQyMTY0NDc4',
+	publicApiKey: 'NTk2NTc1N2EtNjc5ZS00OGZkLTk0N2YtZjU3MzA4Y2M5ZjkyNjM3MjYyODczODQyMTY0NDc4',
 	loadStrategy: 'on-user-interaction',
 	version: '3.4.0'
 };
