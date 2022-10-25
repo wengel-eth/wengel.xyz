@@ -1,6 +1,6 @@
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
-// lessc src/styles/master.less --clean-css master.css
+// lessc src/styles/master.less --clean-css src/_includes/master.css
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('fDate', function fDate(str) {
