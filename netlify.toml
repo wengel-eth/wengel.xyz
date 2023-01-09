@@ -1,5 +1,6 @@
 [ build ]
 	publish = "_site/"
+	command = "lessc src/styles/master.less --clean-css src/_includes/master.css && npx @11ty/eleventy"
 
 [[ redirect ]]
 	from = "https://wengelxyz.netlify.app/*"

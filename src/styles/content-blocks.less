@@ -155,10 +155,11 @@
 
 			.buybox {
 				width: 100%;
-				display: flex;
+				display: grid;
+				grid-template-columns: 3fr 2fr;
 
 				@media screen and (max-width: 500px) {
-					flex-direction: column;
+					grid-template-columns: auto;
 				}
 
 				img {
