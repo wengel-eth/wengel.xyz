@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>William Engel — Store</title>
+
+	<style>:root{--h1:4.6rem;--h2:3.2rem;--h3:2.4rem;--h4:1.8rem;--h5:1.4rem;--h6:1rem;--p:1rem;--ham-w:44px;--button-h:70px;--button-w:250px;--title-padding:72px;--ham-back-padding:20px;--ham-list-margin:80px;--cider-top:10px;--cider-left:-24px;--form-line:6px;--svg-top:0}@media screen and (max-width:780px){:root{--h1:3.2rem;--h2:2.4rem;--h3:1.8rem;--h4:1.4rem;--h5:1rem;--h6:0.9rem;--p:0.9rem;--title-padding:48px;--cider-top:8px;--cider-left:-20px;--form-line:4px;--svg-top:-8px}}@media screen and (max-width:640px){:root{--h1:2.4rem;--h2:1.8rem;--h3:1.4rem;--h4:1rem;--h5:0.9rem;--h6:0.85rem;--p:0.85rem;--ham-w:32px;--button-h:42px;--button-w:150px;--title-padding:36px;--ham-back-padding:16px;--ham-list-margin:64px;--cider-top:6px;--cider-left:-16px;--form-line:4px}}*{scrollbar-width:none;-ms-overflow-style:none;touch-action:pan-y;-webkit-touch-action:pan-y;-webkit-overflow-scrolling:touch}::-webkit-scrollbar{display:none}::selection{background:rgba(255,196,12,.4)}body{margin:0;background:#002147;overflow-x:hidden}h1,h2,h3,h4,h5,h6{font-family:Paytone One;color:#FFC300;margin:0}h1{font-size:var(--h1)}h2{font-size:var(--h2)}h3{font-size:var(--h3)}h4{font-size:var(--h4)}h5{font-size:var(--h5)}h6{font-size:var(--h6)}#app{width:100vw;margin:0;padding:0;overflow-y:scroll;overflow-x:hidden;height:100vh}#ham{position:fixed;transition:.5s all cubic-bezier(.165,.84,.44,1);height:100%;width:calc(100vw + var(--ham-w));left:calc(100vw - var(--ham-w));top:0;z-index:10}#ham.open{left:calc(var(--ham-w) *-1)!important}#ham.hovering{left:calc(100vw - var(--ham-w) - 16px)}#ham .arrow-out{position:absolute;top:20vh;left:calc(var(--ham-w) *-1);background:0 0;border:none;padding:0}#ham .arrow-out svg{height:calc(var(--ham-w) *2);width:calc(var(--ham-w) *2)}#ham .arrow-out svg polygon{fill:#FFC300}#ham .arrow-out svg polygon:hover{cursor:pointer}#ham .menu{position:absolute;height:100%;width:100vw;background:#FFC300;left:var(--ham-w)}#ham .menu .back{position:absolute;padding:var(--ham-back-padding);opacity:.5;font-family:Paytone One;font-size:3rem;line-height:1rem}#ham .menu .back:hover{cursor:pointer;opacity:1}#ham .menu ul{list-style-type:none;top:0;left:0;margin:var(--ham-list-margin);padding:0;font-family:Paytone One;font-size:var(--h1)}#ham .menu ul li{line-height:calc(var(--h1) *1.2)}#ham .menu ul li a{text-decoration:none;color:#000;opacity:.5;transition:.2s}#ham .menu ul li a:hover{cursor:pointer;font-size:calc(var(--h1) *1.6);line-height:calc(var(--h1) *1.6);opacity:1}footer.footer{display:grid;align-items:center;justify-items:center;height:180px;width:100vw;color:#F5F5F5;font-family:Share Tech Mono}footer.footer .v-container{display:grid;grid-template-rows:auto auto;grid-gap:8px;justify-items:center;height:max-content;padding:0 40px}footer.footer .v-container .h-container{width:max-content;display:flex}footer.footer .v-container .h-container .footer-tab{margin:0 16px}footer.footer .v-container .h-container .footer-tab i{font-size:1.8rem;color:#F5F5F5;margin:4px}.page-body{display:grid;position:relative;z-index:0}.page-body li,.page-body p,.page-body ul{font-family:Share Tech Mono}.page-body p{font-size:var(--p)}.page-body .title-slide{box-sizing:border-box;height:calc(100vh*(1/2));width:100vw;padding:var(--title-padding);display:grid;background-position:center;background-size:cover}.page-body .title-slide.top{align-content:start}.page-body .title-slide.bottom{align-content:end}.page-body .title-slide.left{justify-content:start;text-align:left}.page-body .title-slide.right{justify-content:end;text-align:right}.page-body .title-slide.home{height:calc(100vh*(4/5))}.page-body .title-slide.error-page{height:100vh!important;justify-items:center;align-items:center}.page-body .title-slide.error-page h1{font-size:calc(var(--h1) *3)}.page-body .title-slide.error-page p{font-size:var(--h3)}.page-body .title-slide p{color:#F5F5F5}.page-body .content{display:grid;grid-template-columns:auto fit-content(980px) auto;z-index:1}.page-body .content.a{padding-bottom:64px}.page-body .content.a .image-placeholder,.page-body .content.a a,.page-body .content.a img{grid-column:2/3;background:gray;width:980px;height:calc(100vw*(2/3));max-width:100vw;max-height:calc(980px*(2/3))}.page-body .content.a .image-placeholder:focus,.page-body .content.a a:focus,.page-body .content.a img:focus{outline:0}.page-body .content.a .container{grid-column:2/3;padding:12px 48px;max-width:100vw}.page-body .content.a .container ul{list-style-type:square}.page-body .content.b .b{display:grid;grid-column:2/3;margin-bottom:32px}@media screen and (min-width:640px){.page-body .content.b .b{grid-template-columns:auto auto}}.page-body .content.b .b .image-placeholder,.page-body .content.b .b img{background:gray;width:100vw;height:100vw;overflow:hidden;background-size:contain;background-position:center}@media screen and (min-width:640px){.page-body .content.b .b .image-placeholder,.page-body .content.b .b img{width:calc(980px/3);height:calc(980px/3);max-width:calc(100vw/3);max-height:calc(100vw/3)}}.page-body .content.b .b .image-placeholder.overlay::after,.page-body .content.b .b img.overlay::after{content:'';position:relative;display:block;top:0;left:0;height:100%;width:100%;background-image:linear-gradient(transparent,#002147)}.page-body .content.b .b .container{padding:8px 24px}.page-body .content.b .b .container ul{list-style-type:square}.page-body .content.c{display:block}.page-body .content.c .container{width:100%;max-width:968px;margin:0 auto;padding:64px 12px;display:grid;grid-template-columns:repeat(auto-fit,230px);grid-gap:16px}@media screen and (max-width:992px){.page-body .content.c .container{max-width:722px}}@media screen and (max-width:746px){.page-body .content.c .container{max-width:476px}}@media screen and (max-width:500px){.page-body .content.c .container{max-width:230px}}.page-body .content.c .container .product{width:230px;height:330px;box-sizing:border-box;border:8px solid #FFC300;background:#FFC300;text-decoration:none}.page-body .content.c .container .product img{width:214px;height:214px;background:gray}.page-body .content.c .container .product .name{margin:8px 0;font-size:1.4rem;font-family:Share Tech Mono;color:#002147}.page-body .content.c .container .product .price{font-size:1.8rem;font-family:Paytone One;color:#002147}.page-body .content.d{display:block}.page-body .content.d .container{width:100%;max-width:968px;margin:0 auto;padding:32px 12px;box-sizing:border-box}.page-body .content.d .container h1{margin:12px 0}.page-body .content.d .container p,.page-body .content.d .container ul{font-family:Share Tech Mono;color:#F5F5F5;font-size:var(--p)}.page-body .content.d .container p li,.page-body .content.d .container ul li{list-style-type:square}.page-body .content.d .container .buybox{width:100%;display:flex}@media screen and (max-width:500px){.page-body .content.d .container .buybox{flex-direction:column}}.page-body .content.d .container .buybox img{width:inherit}.page-body .content.d .container .buybox .col{width:inherit;display:flex;flex-direction:column;padding:12px;padding-right:0;box-sizing:border-box;gap:12px}@media screen and (max-width:500px){.page-body .content.d .container .buybox .col{padding:12px 0}}.page-body .content.d .container .buybox .col strong{font-family:Share Tech Mono;font-size:var(--h2);color:#FFC300}.page-body .content.d .container .buybox .col .snipcart-add-item{border:4px solid #FFC300;background:0 0;color:#FFC300;font-family:share tech mono;padding:8px 0;font-size:1.8rem}.page-body .content.d .container .buybox .col .snipcart-add-item:hover{background:#FFC300;color:#002147;cursor:pointer}.page-body .content.d .container .buybox .col .snipcart-add-item.sold{border:4px solid #C2C2C2;background:#C2C2C2;color:#707070}.page-body .content.form .container{grid-column:2/3;padding:12px 48px;max-width:100vw;margin:36px 0}.page-body .content.form .container ul{list-style-type:square}.page-body .content.form .container form .names{display:flex}.page-body .content.form .container form .names input:first-of-type{width:40%}.page-body .content.form .container form .names input:nth-of-type(2){width:60%}.page-body .content.form .container form .names input{border:var(--form-line) solid #FFC300;color:#F5F5F5;margin:8px;padding:4px 8px 2px 8px;background:0 0;font-size:var(--h4);font-family:Share Tech Mono}.page-body .content.form .container form .comment{display:flex}.page-body .content.form .container form .comment textarea{width:100%;margin:8px;border:var(--form-line) solid #FFC300;color:#F5F5F5;background:0 0;padding:8px 8px 2px 8px;resize:none;font-size:var(--h4);font-family:Share Tech Mono}.page-body .content.form .container form button{margin:6px}.page-body .content.dark-blue{color:#F5F5F5;background:#002147}.page-body .content.dark-blue :focus{outline:#E30B5D;outline-offset:4px;outline-style:dashed}.page-body .content.pink{color:#F5F5F5;background:#E30B5D}.page-body .content.pink :focus{outline:#002147;outline-offset:4px;outline-style:dashed}.page-body .content .cider{background-size:contain;background-repeat:no-repeat;display:block;position:absolute;height:calc(var(--h2) *1.25);width:100%;z-index:-1;margin-left:var(--cider-left);margin-top:var(--cider-top)}.link-button{pointer-events:visibleFill;height:var(--button-h);width:var(--button-w)}.link-button a{font-family:Paytone One;font-size:2.8rem}.link-button a polygon{stroke:#FFC300;stroke-width:6px;fill:transparent}.link-button a polygon:hover{cursor:pointer;fill:#FFC300}.link-button a text{fill:#FFC300}.link-button a text::selection{color:#FFC300}.link-button a:hover{cursor:pointer}.link-button a:hover polygon{fill:#FFC300}.link-button a:hover text{fill:#fff}.link-button a:hover text::selection{color:#fff}button.link-button{font-family:Paytone One;font-size:2.8rem;padding:0;background:0 0;border:none}button.link-button polygon{stroke:#FFC300;stroke-width:6px;fill:transparent}button.link-button polygon:hover{cursor:pointer;fill:#FFC300}button.link-button polygon:hover~text{fill:#fff}button.link-button text{fill:#FFC300;pointer-events:none}button.link-button svg{position:relative;top:var(--svg-top)}.snipcart-button-primary:hover{box-shadow:none!important}</style>
+
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CGSQ5K68T3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-CGSQ5K68T3');
+	</script>
+
+	<script>window.SnipcartSettings = {
+	publicApiKey: 'NTk2NTc1N2EtNjc5ZS00OGZkLTk0N2YtZjU3MzA4Y2M5ZjkyNjM3MjYyODczODQyMTY0NDc4',
+	loadStrategy: 'on-user-interaction',
+	version: '3.4.0'
+};
+
+(()=>{var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),v(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),m.forEach(g=>document.removeEventListener(g,o))}function v(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+</script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+	<script defer src="https://kit.fontawesome.com/8c55de64c7.js" crossorigin="anonymous"></script>
+
+	
+</head>
+<body>
+	<div id="app">
+		<div class="page-body">
+			
+
+<section class="title-slide bottom left"
+	style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.2)),url('https://ik.imagekit.io/wengel/wengel_xyz/IMG_9655_z_yUF3J6VC3.jpg?tr=w-1440,pr-true');">
+	<h1>My Store.</h1>
+</section>
+
+<section class="content c dark-blue">
+	<div class="container">
+		
+	<a class="product" href="/store/item-pro-life-sticker">
+		<img src="https://ik.imagekit.io/wengel/product_images/IMG_1033_ER-L_6Rdx.JPG?tr=w-720,h-720,fo-center,pr-true" alt="pro life sticker">
+		<span class="name">Pro Life Sticker</span>
+		<br>
+		<span class="price">$2.99</span>
+	</a>
+
+	</div>
+</section>
+
+		</div>
+		
+	<footer class="footer">
+		<div class="v-container">
+			<div class="h-container">
+				<div class="footer-tab">
+					<h3>Online.</h3>
+					<a href="https://dribbble.com/wengel_eth"><i class="fab fa-dribbble"></i></a>
+					<a href="https://twitter.com/wengel_eth"><i class="fab fa-twitter"></i></a>
+				</div>
+				<div class="footer-tab">
+					<h3>Contact.</h3>
+					<a href="/contact"><i class="fas fa-envelope"></i></a>
+				</div>
+			</div>
+			<p>William Engel &#169; {{ thisYear }}</p>
+		</div>
+	</footer>
+
+		<ham id="ham" ref="ham">
+			<div class="arrow-out">
+				<svg viewBox="0 0 16 16">
+					<polygon points="16,0 16,16 8,8"
+						ref="polyMenuHover"
+						@click="toggleMenu()"
+						@mouseenter="toggleMenuHover()"
+						@mouseleave="toggleMenuHover()"/>
+				</svg>
+			</div>
+			<div class="menu">
+				<span class="back" @click="toggleMenu()">×</span>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/store">Store</a></li>
+					<li><a href="/projects">Projects</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a href="https://linktr.ee/wengel.eth">Linktree</a></li>
+				</ul>
+			</div>
+		</ham>
+	</div>
+
+	<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+	<script>const d = new Date();
+
+const app = new Vue({
+	el : '#app',
+	data : {
+		menu : {
+			isHovering : false,
+			isOpen : false
+		},
+		ciders : {
+			'pink' : [
+				'/assets/cider-a-pink.svg',
+				'/assets/cider-b-pink.svg',
+				'/assets/cider-c-pink.svg',
+				'/assets/cider-d-pink.svg',
+				'/assets/cider-e-pink.svg',
+				'/assets/cider-f-pink.svg'
+			],
+			'dark-blue' : [
+				'/assets/cider-a-dark-blue.svg',
+				'/assets/cider-b-dark-blue.svg',
+				'/assets/cider-c-dark-blue.svg',
+				'/assets/cider-d-dark-blue.svg',
+				'/assets/cider-e-dark-blue.svg',
+				'/assets/cider-f-dark-blue.svg'
+			]
+		}
+	},
+	computed : {
+		thisYear : function() {
+			return d.getFullYear();
+		}
+	},
+	methods : {
+		toggleMenu : function() {
+			this.$refs.ham.classList.toggle('open')
+			this.menu.isOpen = !this.menu.isOpen
+		},
+		closeMenu : function() {
+			if (this.menu.isOpen) {
+				this.$refs.ham.classList.toggle('open')
+				this.menu.isOpen = !this.menu.isOpen
+			}
+		},
+		openMenu : function() {
+			if (!this.menu.isOpen) {
+				this.$refs.ham.classList.toggle('open')
+				this.menu.isOpen = !this.menu.isOpen
+			}
+		},
+		toggleMenuHover : function() {
+			this.$refs.ham.classList.toggle('hovering')
+			this.menu.isHovering = !this.menu.isHovering
+		},
+		randCider : function(color) {
+			return this.ciders[color][Math.floor(Math.random()*this.ciders[color].length)];
+		},
+		ciderGen : function() {
+			var items = document.getElementsByClassName('cider');
+			for (let item = 0; item < items.length; item++) { // deploys random ciders above headers
+				var locol;
+				try {
+					let itemClassList = Array.from(items[item].parentNode.parentNode.classList);
+					if (itemClassList.indexOf('dark-blue') != -1) {
+						locol = 'pink';
+					} else if (itemClassList.indexOf('pink') != -1) {
+						locol = 'dark-blue';
+					}
+				} catch (err) {
+					let itemClassList = Array.from(items[item].parentNode.parentNode.parentNode.classList);
+					if (itemClassList.indexOf('dark-blue') != -1) {
+						locol = 'pink';
+					} else if (itemClassList.indexOf('pink') != -1) {
+						locol = 'dark-blue';
+					}
+				}
+				items[item].style.backgroundImage = ('url("' + this.randCider(locol) + '")');
+			}
+		}
+	},
+	mounted : function() {
+		this.ciderGen();
+	},
+	updated : function() {
+		this.ciderGen();
+	}
+});
+</script>
+</body>
+
+</html>
