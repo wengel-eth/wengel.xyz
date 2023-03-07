@@ -1,5 +1,3 @@
-#lessc stylesheets/style.less --clean-css stylesheets/master.css
-
 [[redirects]]
 	from = "/*"
 	to = "/index.html"
