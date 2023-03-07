@@ -241,6 +241,9 @@
 						background: transparent;
 						font-size: var(--h4);
 						font-family: Share Tech Mono;
+						&::-webkit-input-placeholder {
+							color: fade(@co1, 50%);
+						}
 					}
 				}
 
@@ -257,6 +260,9 @@
 						resize: none;
 						font-size: var(--h4);
 						font-family: Share Tech Mono;
+						&::-webkit-input-placeholder {
+							color: fade(@co1, 50%);
+						}
 					}
 				}
 
@@ -275,6 +281,7 @@
 			outline: @co2;
 			outline-offset: 4px;
 			outline-style: dashed;
+			outline-width: medium;
 		}
 	}
 
@@ -286,6 +293,7 @@
 			outline: @secondary;
 			outline-offset: 4px;
 			outline-style: dashed;
+			outline-width: medium;
 		}
 	}
 
