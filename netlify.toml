@@ -1,4 +1,14 @@
-[[redirects]]
-	from = "/*"
-	to = "/index.html"
+[ build ]
+	publish = "_site/"
+	command = "lessc src/styles/master.less --clean-css src/_includes/master.css && npx @11ty/eleventy"
+
+[[ redirect ]]
+	from = "https://wengelxyz.netlify.app/*"
+	to = "https://wengel.xyz/:splat"
 	status = 200
+	force = true
+
+[[ redirect ]]
+	from = "/*"
+	to = "/404"
+	status = 404

@@ -1,41 +1,28 @@
 const d = new Date();
 
-const routes = [
-	{path: '/', component: Home},
-	{path: '/contact', component: Contact},
-	{path: '/projects', component: Projects},
-	{path: '/404', component: ErrorPage},
-	{path: '/*', redirect: '/404'}
-];
-
-const router = new VueRouter({
-	routes
-});
-
 const app = new Vue({
 	el : '#app',
 	data : {
-		currentRoute : window.location.pathname,
 		menu : {
 			isHovering : false,
 			isOpen : false
 		},
 		ciders : {
 			'pink' : [
-				'../assets/cider-a-pink.svg',
-				'../assets/cider-b-pink.svg',
-				'../assets/cider-c-pink.svg',
-				'../assets/cider-d-pink.svg',
-				'../assets/cider-e-pink.svg',
-				'../assets/cider-f-pink.svg'
+				'/assets/cider-a-pink.svg',
+				'/assets/cider-b-pink.svg',
+				'/assets/cider-c-pink.svg',
+				'/assets/cider-d-pink.svg',
+				'/assets/cider-e-pink.svg',
+				'/assets/cider-f-pink.svg'
 			],
 			'dark-blue' : [
-				'../assets/cider-a-dark-blue.svg',
-				'../assets/cider-b-dark-blue.svg',
-				'../assets/cider-c-dark-blue.svg',
-				'../assets/cider-d-dark-blue.svg',
-				'../assets/cider-e-dark-blue.svg',
-				'../assets/cider-f-dark-blue.svg'
+				'/assets/cider-a-dark-blue.svg',
+				'/assets/cider-b-dark-blue.svg',
+				'/assets/cider-c-dark-blue.svg',
+				'/assets/cider-d-dark-blue.svg',
+				'/assets/cider-e-dark-blue.svg',
+				'/assets/cider-f-dark-blue.svg'
 			]
 		}
 	},
@@ -96,14 +83,5 @@ const app = new Vue({
 	},
 	updated : function() {
 		this.ciderGen();
-	},
-	router
-});
-
-router.afterEach((to, from) => {
-	app.closeMenu();
-	document.getElementById('app').scrollTo({
-		top: 0,
-		left: 0
-	});
+	}
 });
